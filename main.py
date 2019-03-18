@@ -40,8 +40,8 @@ def twitter_sentiment_analyzer():
 
     response = browser.page_source
     soup_obj = BeautifulSoup(response, 'lxml')
-    sys.stdout.write('\r' + "\n" + str(len(soup_obj.findAll('p', {'class' : 'TweetTextSize'}))) + '\r')
-    sys.stdout.flush()
+    #sys.stdout.write('\r' + "\n" + str(len(soup_obj.findAll('p', {'class' : 'TweetTextSize'}))) + '\r')
+    #sys.stdout.flush()
     for item in soup_obj.findAll('p', {'class' : 'TweetTextSize'}):
         count += 1
         score = analyser.polarity_scores(item.text.replace('\n', '').strip())
