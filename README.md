@@ -4,7 +4,7 @@ Twitter's API is annoying to work with, and has lots of limitations. Scrape all 
 
 Average Tweets 
 ------------------------------------------------------------------------------------------------------------------------------------------
-It appears you can ask for up to 25 pages of tweets reliably (~486 tweets)
+It appears you can ask for up to 25 pages of tweets reliably (~1200 tweets)
 
 Dependencies
 ============
